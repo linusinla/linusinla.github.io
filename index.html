@@ -1,21 +1,24 @@
 <!DOCTYPE <html>
 
 <html>
-  <script src="scripts/menu.js"></script>
 
   <head>
     <title>linusinla - home</title>
 
+    <base href="/home/linusinla/linusinla.github.io/">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap">
 
-    <link rel="shortcut icon" href="icon.png">
+    <link rel="shortcut icon" href="logo.png">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
+  <script src="scripts/menu.js"></script>
+
   <nav class="dropdown">
-    <button onclick="menu()" class="dropbtn">Menu</button>
+    <button onclick="openMenu()" class="dropbtn">Menu</button>
     <div id="menuContent" class="dropdown-content">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -26,7 +29,5 @@
 
   <body>
     <a href="index.html" class="transparent"><h1>linusinla</h1></a>
-
-    <a href="https://google.com/">test</a>
   </body>
 </html>
