@@ -44,20 +44,12 @@ p {
 }
 
 a:link, a:visited {
-  color: #cdd6f4;
+  color: transparent;
 }
 
 a:hover {
   background: #89b4fa;
   color: #1e1e2e;
-}
-
-.transparent a:visited {
-  color: transparent;
-}
-
-.transparent a:link {
-  color: transparent;
 }
 
 /* Style The Dropdown Button */
@@ -127,4 +119,17 @@ p.borders {
 
   padding-left: 5px;
   padding-right: 5px;
+}
+
+@keyframes bounceScale {
+  0%   { transform: scale(1); }
+  25%  { transform: scale(1.2); }
+  50%  { transform: scale(0.9); }
+  75%  { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.bounce-effect:hover {
+  transform-origin: center center;
+  animation: bounceScale 2s infinite;
 }
