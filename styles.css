@@ -1,3 +1,8 @@
+* {
+  font-family: 'JetBrains Mono', Verdana, sans-serif;
+  color: #cdd6f4;
+}
+
 body {
   background-color: #1e1e2e;
 }
@@ -8,7 +13,6 @@ h1, h2, h3, h4, h5, h6 {
 
   text-align: left;
 
-  font-family: 'JetBrains Mono', Verdana, Arial;
   font-weight: 500;
   font-style: normal;
 
@@ -30,8 +34,6 @@ p {
   
   color: #cdd6f4;
 
-  font-family: 'JetBrains Mono', Verdana, Arial;
-
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 15px;
@@ -41,16 +43,20 @@ p {
   padding-right: 5px;
 }
 
-a:hover div {
+a:link, a:visited {
+  color: #cdd6f4;
+}
+
+a:hover {
   background: #89b4fa;
   color: #1e1e2e;
 }
 
-a:link {
+.transparent a:visited {
   color: transparent;
 }
 
-a:visited {
+.transparent a:link {
   color: transparent;
 }
 
@@ -61,15 +67,20 @@ a:visited {
   padding: 10px;
   font-size: 16px;
   cursor: pointer;
+  border: none;
 
   float: right;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #89b4fa;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
 
-  float: right;
+  display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -98,15 +109,11 @@ a:visited {
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
+.dropdown-content a:hover {
+  background-color: #89b4fa;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #89b4fa;
-  color: #1e1e2e;
-}
+.show {display: block;}
 
 p.borders {
   color: #cdd6f4;
