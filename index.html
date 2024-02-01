@@ -1,33 +1,35 @@
 <!DOCTYPE <html>
 
 <html>
-
   <head>
     <title>linusinla - home</title>
 
-    <base href="https://linusinla.github.io/">
+    <base href="192.168.12.129">
 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap"
+    />
 
-    <link rel="shortcut icon" href="logo.png">
+    <link rel="shortcut icon" href="logo.png" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
   <script src="scripts/menu.js"></script>
 
-  <nav class="dropdown">
-    <button onclick="openMenu()" class="dropbtn">Menu</button>
-    <div id="menuContent" class="dropdown-content">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="sitemap.html">Sitemap</a>
-    </div>
-  </nav>
+  <div id="navBar" class="sticky">
+    <a href="#"><h1>linusinla</h1></a>
+
+    <a class="menuItem" href="/">Home</a>
+    <a class="menuItem" href="/about/">About</a>
+    <a class="menuItem" href="/projects/">Projects</a>
+  </div>
 
   <body>
-    <a href="index.html"><h1>linusinla</h1></a>
+    <h2 style="padding-bottom: 2000px">home</h2>
+
+    <p class="fixed">button to top</p>
   </body>
 </html>
